@@ -1,28 +1,64 @@
-header, footer {
-  background-color: lightgray;
-}
-
 #sidebar-container {
   height: 150px;
   line-height: 150px;
+  background-color: aquamarine;
 }
 
 #cd-container {
   height: 250px;
+  background-color: blueviolet;
 }
 
 #cd-container div {
   height: 125px;
   line-height: 125px;
+  outline: 1px solid white;
 }
 
 #gallery-container {
   height: 500px;
   line-height: 250px;
+  background-color: cadetblue;
 }
 
 #gallery-container div{
   height: 250px;
   width: 50%;
   float: left;
+  outline: 1px solid white;
+}
+
+@media screen and (min-width: 768px) {
+  header {
+    height: 100px;
+    line-height: 100px;
+  }
+  
+  footer {
+    height: 150px;
+    line-height: 150px
+  }
+  #sidebar-container {
+    height: 600px;
+    line-height: 600px;
+  }
+
+  #cd-container {
+    height: 200px;
+  }
+
+  #cd-container div {
+    width: 50%;
+    height: 200px;
+    line-height: 200px;
+    float: left;
+  }
+
+  #gallery-container {
+    height: 250px;
+  }
+
+  #gallery-container div {
+    width: 25%;
+  }
 }
